@@ -12,9 +12,11 @@ class ArtistController extends AbstractController
      */
     public function index()
     {
-        return $this->json([
-            'message' => 'Artiste Controller',
-            'path' => 'src/Controller/ArtistController.php',
-        ]);
+//        return $this->json([
+//            'message' => 'Artist Controller',
+//            'path' => 'src/Controller/ArtistController.php',
+
+//        ]);
+        return $this->render('artists/list.html.twig');
     }
 }

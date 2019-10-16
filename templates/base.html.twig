@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Bienvenue{% endblock %} | KRITIK</title>
-    {% block css %}{% endblock %}
+    {% block css %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
 </head>
     <body>
         {% block body %}{% endblock %}
-        {% block js %}{% endblock %}
+        {% block js %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
     </body>
 </html>

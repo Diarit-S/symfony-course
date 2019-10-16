@@ -12,9 +12,6 @@ class RankingController extends AbstractController
      */
     public function index()
     {
-        return $this->json([
-            'message' => 'Ranking Controller',
-            'path' => 'src/Controller/RankingController.php',
-        ]);
+        return $this->render('ranking/news.html.twig');
     }
 }
